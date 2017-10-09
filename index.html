@@ -11,6 +11,8 @@
     
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="core/js/materialize/jquery.js"></script>
+    <script type="text/javascript" src="core/js/sys/sys.js"></script>
 </head>
 <body>
 
@@ -19,14 +21,20 @@
       <a href="#!" class="brand-logo">Web OS</a>
       <a href="#" data-activates="all-menu" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#" data-activates="all-menu" id="show-menu"><i class="material-icons">menu</i></a></li>
+          <li><a href="javascript:void(0)">Инструкция</a></li>
+          <li><a href="javascript:void(0)">Возможности</a></li>
+        <li><a href="javascript:void(0)" data-activates="all-menu" id="show-menu"><i class="material-icons">menu</i></a></li>
       </ul>
       <ul class="side-nav" id="all-menu">
-        <li><a href="sass.html">Калькулятор</a></li>
+       <hr>
+          <li><a href="#">Калькулятор</a></li>
+          <hr>
+          <li><b>для разработчиков</b></li>
+          <input type="text" max="20" id="nameProject" placeholder="имя приложения">
+          <li><a  id="DevNewProject" href="javascript:void(0)">Создать проект</a></li>
       </ul>
     </div>
   </nav>
-
   <div>
       <iframe src=""></iframe>
   </div>
@@ -34,5 +42,6 @@
     <script type="text/javascript" src="core/js/materialize/jquery.js"></script>
     <script type="text/javascript" src="core/js/materialize/materialize.min.js"></script>
     <script src="core/js/sys/ui.js"></script>
+    <script src="core/js/sys/handler.js"></script>
 </body>
 </html>

@@ -10,6 +10,8 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "gulp": "^3.9.1",
+    "gulp-watch": "^4.3.11"
   }
 }

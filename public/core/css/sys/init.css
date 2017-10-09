@@ -2,3 +2,9 @@ iframe{
     width: 100vw;
     border: none;
 }
+
+input[type=text]{
+    color: black;
+    margin: 5px;
+    padding: 5px;
+}
