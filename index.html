@@ -12,7 +12,7 @@
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script type="text/javascript" src="core/js/materialize/jquery.js"></script>
-    <script type="text/javascript" src="core/js/sys/sys.js"></script>
+    
 </head>
 <body>
 
@@ -27,6 +27,7 @@
       </ul>
       <ul class="side-nav" id="all-menu">
        <hr>
+          <span id="item-all"></span>
           <li><a href="#">Калькулятор</a></li>
           <hr>
           <li><b>для разработчиков</b></li>
@@ -36,12 +37,16 @@
     </div>
   </nav>
   <div>
-      <iframe src=""></iframe>
+      <iframe id="application-window" src=""></iframe>
   </div>
+   
     <!-- SCRIPTS -->
-    <script type="text/javascript" src="core/js/materialize/jquery.js"></script>
-    <script type="text/javascript" src="core/js/materialize/materialize.min.js"></script>
+    <script src="core/js/materialize/jquery.js"></script>
+    <script src="core/js/materialize/materialize.min.js"></script>
     <script src="core/js/sys/ui.js"></script>
     <script src="core/js/sys/handler.js"></script>
+    <script src="core/js/sys/sys.js"></script>
+    <! -- APPLICATION -->
+    <script src="/app/info/main.js"></script>
 </body>
 </html>
