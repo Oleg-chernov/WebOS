@@ -23,7 +23,7 @@ input[type=text].input-console{
 .console {
     background-color: black;
     width: 100vw;
-    height: 40%;
+    max-height: 500px;
     display: none;
     color: aliceblue;
 }
@@ -38,4 +38,11 @@ input[type=text].input-console{
 }
 #all-commands{
     color: aliceblue;
+}
+
+console-info {
+    color: azure;
+}
+console-error {
+    color: chocolate;
 }

@@ -3,11 +3,13 @@
 */
 
 document.getElementById('DevNewProject').onclick = function(){
-        var text= $("#nameProject").val();;
-        $.post('http://localhost:8081/newProject',{text: text}, function(data){
-    console.log(text)
-        if(data==='done') {
-            console.log("success");
+        var text= $("#nameProject").val();
+        if(text != '') {
+            $.post('http://localhost:8081/newProject',{text: text}, function(data){
+            if(data==='done') {
+                console.log("success");
+            }});
+        } else {
+            alert('Заполните поле');
         }
-        });
 }
