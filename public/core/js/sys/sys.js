@@ -1,3 +1,8 @@
+/*
+
+*/
+
+//функция отправки запроса на сервер
 function sendHttp(textUser, req){
     var text= textUser;
     $.post(req,{text: text}, function(data){
@@ -8,6 +13,7 @@ function sendHttp(textUser, req){
 });
 }
 
+//функция инициализации приложения
 function createApp(sett) {
     var menu = document.getElementById('item-all');
     if(!sett.nameApp){

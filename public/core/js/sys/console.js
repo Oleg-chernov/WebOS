@@ -1,3 +1,7 @@
+/*
+    файл движка консоли
+*/
+
 
 function showConsole() {
     document.querySelector('.input-console').value = '';

@@ -7,6 +7,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var fs = require('fs');
+var colors = require('colors');
 //var httpR = require('./public/core/js/sys/http.js');
 
 // создаём Express-приложение
@@ -36,4 +37,8 @@ app.post('/newProject',function(req,res){
 });
 
 app.listen(8081);
-console.log('Сервер стартовал!');
+console.log('Сервер запущен по адресу http://localhost:8081');
+console.log(' ');
+console.log('--------------------------------------'.inverse);
+console.log(' ');
+console.log('Хотите внести вклад в разработку ? Мы не против: https://github.com/WebOS'.green)

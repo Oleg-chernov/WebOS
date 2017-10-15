@@ -1,5 +1,5 @@
 /*
-    Файл с обработчиками событий
+    Файл с обработчиками событий для конопок.
 */
 
 document.getElementById('DevNewProject').onclick = function(){
