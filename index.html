@@ -6,16 +6,21 @@
     <title>Web OS</title>
     
     <!-- STYLES -->
-    <link type="text/css" rel="stylesheet" href="core/css/materialize/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="core/css/materialize/materialize.min.css" />
     <link type="text/css" rel="stylesheet" href="core/css/sys/init.css">
     
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script type="text/javascript" src="core/js/materialize/jquery.js"></script>
-    
+
 </head>
 <body>
 
+<div class="console">
+   <input type="text" class="input-console">
+   <code><span id="all-commands"></span></code>
+</div> 
+    <script type="text/javascript" src="core/js/materialize/jquery.js"></script>
+     <script src="core/js/sys/console.js"></script>
   <nav>
     <div class="nav-wrapper blue-grey darken-1">
       <a href="#!" class="brand-logo">Web OS</a>
@@ -26,13 +31,12 @@
         <li><a href="javascript:void(0)" data-activates="all-menu" id="show-menu"><i class="material-icons">menu</i></a></li>
       </ul>
       <ul class="side-nav" id="all-menu">
-       <hr>
           <span id="item-all"></span>
-          <li><a href="#">Калькулятор</a></li>
           <hr>
-          <li><b>для разработчиков</b></li>
+          <li><h5 id="dev">для разработчиков</h5></li>
           <input type="text" max="20" id="nameProject" placeholder="имя приложения">
           <li><a  id="DevNewProject" href="javascript:void(0)">Создать проект</a></li>
+          <li><a  onclick="showConsole()" href="javascript:void(0)" class="blue lighten-5">Консоль</a></li>
       </ul>
     </div>
   </nav>
@@ -41,12 +45,14 @@
   </div>
    
     <!-- SCRIPTS -->
-    <script src="core/js/materialize/jquery.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="core/js/materialize/jquery.keyboard.js"></script>
     <script src="core/js/materialize/materialize.min.js"></script>
     <script src="core/js/sys/ui.js"></script>
     <script src="core/js/sys/handler.js"></script>
     <script src="core/js/sys/sys.js"></script>
+   
     <! -- APPLICATION -->
-    <script src="/app/info/main.js"></script>
+    <script src="app/info/main.js"></script>
 </body>
 </html>
