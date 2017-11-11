@@ -46,3 +46,7 @@ console-info {
 console-error {
     color: chocolate;
 }
+#nameProject{
+    margin: 5px;
+    padding 7px;
+}
