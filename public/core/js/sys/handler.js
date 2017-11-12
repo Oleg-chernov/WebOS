@@ -8,8 +8,17 @@ document.getElementById('DevNewProject').onclick = function(){
             $.post('http://localhost:8081/newProject',{text: text}, function(data){
             if(data==='done') {
                 console.log("success");
+                swal(
+                    'Готово',
+                    'Папка с приложением создана. Внесите правки в index.html',
+                    'success'
+                    );
             }});
         } else {
-            alert('Заполните поле');
+            swal(
+                'ОЙ...',
+                'Кажется, что вы забыли ввести  имя приложения!',
+                'error'
+                );
         }
 }

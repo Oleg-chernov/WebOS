@@ -20,6 +20,9 @@ input[type=text].input-console{
     padding: 5px;
     margin-bottom: 2px;
 }
+.brand-logo {
+    margin-left: 10px;
+}
 .console {
     background-color: black;
     width: 100vw;
